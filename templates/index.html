@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>日志分析应用</title>
+    <meta name="description" content="This is a free Bootstrap landing page theme created for BootstrapZero. Feature video background and one page design." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/ionicons.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}" />
+
+  </head>
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i> Landing Zero</a>
+            </div>
+
+        </div>
+    </nav>
+    <header id="first">
+        <div class="header-content">
+            <div css=""div>
+
+
+                <form method="POST" enctype="multipart/form-data">
+                    <table>
+                        <td><input type="file" name="file"></td>
+                        <td><input type="submit" value="Upload"></td>
+                    </table>
+                 </form>
+
+
+            </div>
+        </div>
+        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="{{ url_for('static', filename='assets/background.jpeg') }}" id="video-background">
+            <source src="{{ url_for('static',filename='assets/Traffic-blurred2.mp4') }}" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+    </header>
+    <script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.easing.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/wow.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/scripts.js') }} "></script>
+  </body>
+</html>

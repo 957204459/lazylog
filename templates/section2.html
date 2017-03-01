@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block section2 %}
+<section class="panel b-blue">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+     <h1 class="panel__headline">
+      <div class="panel__block"></div>
+
+
+
+    <div style="width:800px">
+
+         <h6>系统分析</h6>
+         {% pie_chart system_dict %}
+
+         <h6>浏览器分析</h6>
+         {% pie_chart browser_dict %}
+
+    </div>
+
+{#         {%line_chartdatawithstyle="width:200px;height:20px;"%}#}
+     </h1>
+
+
+    </div>
+
+  </article>
+</section>
+{% endblock %}

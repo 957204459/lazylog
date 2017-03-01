@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block section1 %}
+<section class="panel b-blue" id="1">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+     <h1 class="panel__headline">
+      <div class="panel__block"></div>
+      <header class="htmleaf-header">
+		<h1>基础日志 </h1>
+
+	</header>
+
+        <h1>访问非静态页面前十的IP</h1>
+    {% bar_chart ip_data %}
+    <h1>访问次数最多的前十的url</h1>
+    {% bar_chart url_data %}
+
+    </div>
+  </article>
+</section>
+{% endblock %}
